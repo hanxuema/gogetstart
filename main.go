@@ -20,4 +20,5 @@ func main() {
 	const c int = 3
 	fmt.Println(c)
 	fmt.Println(first, second, third, fifth, forth, six)
+	arraymain()
 }
