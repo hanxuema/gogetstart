@@ -22,4 +22,5 @@ func main() {
 	fmt.Println(first, second, third, fifth, forth, six)
 	arraymain()
 	mapmain()
+	structmain()
 }
