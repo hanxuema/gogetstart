@@ -21,4 +21,5 @@ func main() {
 	fmt.Println(c)
 	fmt.Println(first, second, third, fifth, forth, six)
 	arraymain()
+	mapmain()
 }
