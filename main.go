@@ -3,6 +3,9 @@ package main
 import (
 	"errors"
 	"fmt"
+	"net/http"
+
+	"github.com/hanxuema/gogetstart/controllers"
 
 	"github.com/hanxuema/gogetstart/models"
 )
@@ -17,6 +20,9 @@ func main() {
 	port := 3000
 	_, err := startWebServer(port, 2)
 	fmt.Println(port, err)
+
+	controllers.RegisterControllers()
+	http.ListenAndServe(":3000", nil)
 }
 
 func startWebServer(port, numberOfRetry int) (int, error) {
