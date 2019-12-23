@@ -15,7 +15,7 @@ func main() {
 	}
 	fmt.Println(u)
 	port := 3000
-	port, err := startWebServer(port, 2)
+	_, err := startWebServer(port, 2)
 	fmt.Println(port, err)
 }
 
