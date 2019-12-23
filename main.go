@@ -1,26 +1,27 @@
 package main
 
 import (
+	"errors"
 	"fmt"
-)
 
-const (
-	first  = iota //0
-	second = iota //1
-	third  = iota //2
-	fifth         //3
-)
-
-const (
-	forth = iota //0 reset
-	six          //1
+	"github.com/hanxuema/gogetstart/models"
 )
 
 func main() {
-	const c int = 3
-	fmt.Println(c)
-	fmt.Println(first, second, third, fifth, forth, six)
-	arraymain()
-	mapmain()
-	structmain()
+	u := models.User{
+		ID:        2,
+		FirstName: "XAVIER",
+		LastName:  "XIE",
+	}
+	fmt.Println(u)
+	port := 3000
+	port, err := startWebServer(port, 2)
+	fmt.Println(port, err)
+}
+
+func startWebServer(port, numberOfRetry int) (int, error) {
+	fmt.Println("starting server...")
+	fmt.Println("server started...", port)
+	fmt.Println("number of retry...", numberOfRetry)
+	return port, errors.New("something went wrong")
 }
