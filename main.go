@@ -23,6 +23,7 @@ func main() {
 	// http.ListenAndServe(":3000", nil)
 
 	loops()
+	panicMain()
 }
 
 func startWebServer(port, numberOfRetry int) (int, error) {
