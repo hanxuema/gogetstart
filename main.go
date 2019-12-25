@@ -3,11 +3,9 @@ package main
 import (
 	"errors"
 	"fmt"
-	"net/http"
-
-	"github.com/hanxuema/gogetstart/controllers"
-
-	"github.com/hanxuema/gogetstart/models"
+	// "net/http"
+	// "github.com/hanxuema/gogetstart/controllers"
+	 "github.com/hanxuema/gogetstart/models"
 )
 
 func main() {
@@ -17,12 +15,14 @@ func main() {
 		LastName:  "XIE",
 	}
 	fmt.Println(u)
-	port := 3000
-	_, err := startWebServer(port, 2)
-	fmt.Println(port, err)
+	// port := 3000
+	// _, err := startWebServer(port, 2)
+	// fmt.Println(port, err)
 
-	controllers.RegisterControllers()
-	http.ListenAndServe(":3000", nil)
+	// controllers.RegisterControllers()
+	// http.ListenAndServe(":3000", nil)
+
+	loops()
 }
 
 func startWebServer(port, numberOfRetry int) (int, error) {
