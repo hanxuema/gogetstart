@@ -5,7 +5,7 @@ import (
 	"fmt"
 	// "net/http"
 	// "github.com/hanxuema/gogetstart/controllers"
-	 "github.com/hanxuema/gogetstart/models"
+	"github.com/hanxuema/gogetstart/models"
 )
 
 func main() {
@@ -23,6 +23,7 @@ func main() {
 	// http.ListenAndServe(":3000", nil)
 
 	loops()
+	ifMain()
 	panicMain()
 }
 
