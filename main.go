@@ -24,7 +24,7 @@ func main() {
 
 	loops()
 	ifMain()
-	panicMain()
+	//panicMain()
 }
 
 func startWebServer(port, numberOfRetry int) (int, error) {
